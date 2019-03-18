@@ -65,7 +65,7 @@ fi
 
 if [ ! -z ${SERVER_VERSION} ]; then
     SERVER_VERSION=`echo ${SERVER_VERSION} | sed 's#.*/##'`
-    cat << EOF > html/inc/release.inc
+    cat << EOF > html/inc/server_version.inc
 <?php
 
 global \$server_version ;
