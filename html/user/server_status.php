@@ -30,8 +30,8 @@ require_once("../inc/cache.inc");
 require_once("../inc/util.inc");
 require_once("../inc/xml.inc");
 require_once("../inc/boinc_db.inc");
-if(file_exists('../inc/release.inc'))
-    include '../inc/release.inc';
+if(file_exists('../inc/server_version.inc'))
+    include '../inc/server_version.inc';
 
 if (!defined('STATUS_PAGE_TTL')) {
     define('STATUS_PAGE_TTL', 3600);

@@ -103,6 +103,7 @@ py/setup.py
 stamp-h1
 test/version.inc
 html/inc/release.inc
+html/inc/server_version.inc
 
 ## files created by make:
 *.o

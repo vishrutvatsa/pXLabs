@@ -19,8 +19,8 @@
 require_once("../inc/consent.inc");
 require_once("../inc/util.inc");
 require_once("../inc/xml.inc");
-if(file_exists('../inc/release.inc'))
-    include '../inc/release.inc';
+if(file_exists('../inc/server_version.inc'))
+    include '../inc/server_version.inc';
 
 BoincDb::get(true);
 xml_header();
@@ -116,8 +116,7 @@ show_platforms();
 // the terms_of_use.txt file in the project base directory.
 if (defined('TERMSOFUSE_FILE')) {
   $tou_file = TERMSOFUSE_FILE;
-}
-else {
+} else {
   $tou_file =  "../../terms_of_use.txt";
 }
 if (file_exists($tou_file)) {
